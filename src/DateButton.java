@@ -57,16 +57,14 @@ public class DateButton extends JButton {
     }
 
     /**
-     * Sets the date and updates the text with the formatted date.
+     * Sets the date to the specified value and updates the text representation.
      *
-     * @param date the new date to be set
-     * @throws IllegalArgumentException if the date is null
-     * @throws PropertyVetoException if the date change is vetoed by a PropertyChangeListener
-     * @example
-     * <pre>{@code
-     * Date newDate = new Date();
-     * setDate(newDate);
-     * }</pre>
+     * This method updates the internal date field and formats the new date 
+     * using the predefined DATE_FORMAT. It also fires a property change event 
+     * to notify listeners about the change in the date property.
+     *
+     * @param date the new date to set
+     * @throws NullPointerException if the specified date is null
      */
     public void setDate(Date date) {
         Date old = this.date;
