@@ -84,6 +84,7 @@ class Scheduling_report extends JInternalFrame {
         cancel.addActionListener(new java.awt.event.ActionListener() {
 
             public void actionPerformed(java.awt.event.ActionEvent e) {
+                
                 dispose();
 
             }
@@ -118,7 +119,6 @@ class Scheduling_report extends JInternalFrame {
 
                 listPane.append("\n\n");
             }
-
 
             if (rst != null) {
                 rst.close();
