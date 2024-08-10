@@ -68,6 +68,7 @@ public class Buses extends JPanel implements Printable {
         btnAddNew.addActionListener(new java.awt.event.ActionListener() {
 
             public void actionPerformed(java.awt.event.ActionEvent e) {
+                
                 AddEntry frm = new AddEntry();
                 MDIWindow.desktop.add(frm);
                 frm.setVisible(true);
@@ -80,6 +81,7 @@ public class Buses extends JPanel implements Printable {
         btnClose.addActionListener(new java.awt.event.ActionListener() {
 
             public void actionPerformed(java.awt.event.ActionEvent e) {
+                
                 setVisible(false);
             }
         });
