@@ -122,6 +122,7 @@ public class UpdatePass extends JInternalFrame {
         text4.addFocusListener(new FocusAdapter() {
 
             public void focusLost(FocusEvent e) {
+                
                 JTextField textField =
                         (JTextField) e.getSource();
                 String content = textField.getText();
@@ -141,6 +142,7 @@ public class UpdatePass extends JInternalFrame {
         button1.addActionListener(new ActionListener() {
 
             public void actionPerformed(ActionEvent e) {
+                
                 if (text1.getText() == null ||
                         text1.getText().equals("")) {
                     JOptionPane.showMessageDialog(null, "Enter Passenger number", "Error", JOptionPane.DEFAULT_OPTION);
