@@ -36,6 +36,7 @@ public class DateButton extends JButton {
 
     public DateButton(Date date) {
 
+        
         super(DATE_FORMAT.format(date));
         this.date = date;
     }
@@ -68,7 +69,6 @@ public class DateButton extends JButton {
      * }</pre>
      */
     public void setDate(Date date) {
-
         Date old = this.date;
         this.date = date;
         setText(DATE_FORMAT.format(date));
