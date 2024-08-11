@@ -21,6 +21,7 @@ public class Main implements Runnable {
      * </pre>
      */
     public void run() {
+        
         frame.setVisible(true);
     }//run method closed
 
@@ -40,6 +41,7 @@ public class Main implements Runnable {
      * </pre>
      */
     public static void main(String args[]) {
+        
         new frmSplash(3000);
         EventQueue.invokeLater(new Main(new LoginScreen()));
     }//main method closed
