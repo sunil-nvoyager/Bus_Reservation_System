@@ -16,6 +16,7 @@ public class DBConnection {
      * }</pre>
      */
     public static Connection getDBConnection() {
+        
         Connection connection;
         try {
             Class.forName("com.mysql.jdbc.Driver");
