@@ -4,16 +4,20 @@ import java.sql.DriverManager;
 
 public class DBConnection {
     /**
-     * Establishes a connection to the database.
+     * Establishes a connection to the MySQL database.
      *
-     * @return the database connection
-     * @throws ClassNotFoundException if the MySQL JDBC driver class is not found
-     * @throws SQLException if a database access error occurs
+     * This method attempts to load the MySQL JDBC driver and establish a connection
+     * to the database located at "jdbc:mysql://localhost/bus" using the username "root"
+     * and an empty password. If the connection is successful, it returns the 
+     * {@link Connection} object. If any exception occurs during the process, 
+     * it catches the exception and returns null.
      *
-     * Example:
-     * <pre>{@code
-     * Connection connection = getDBConnection();
-     * }</pre>
+     * @return a {@link Connection} object if the connection is successful; 
+     *         null if the connection fails.
+     *
+     * @throws ClassNotFoundException if the MySQL JDBC driver class is not found.
+     * @throws SQLException if a database access error occurs or the URL is 
+     *         {@code null}.
      */
     public static Connection getDBConnection() {
         
