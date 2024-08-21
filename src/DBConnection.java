@@ -23,6 +23,7 @@ public class DBConnection {
             connection = DriverManager.getConnection("jdbc:mysql://localhost/bus", "root", "");
             return connection;
         } catch (Exception ex) {
+            
             return null;
         }//try catch closed
     }//getDBConnection() closed
