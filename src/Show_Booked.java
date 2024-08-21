@@ -80,6 +80,14 @@ public class Show_Booked extends JInternalFrame {
 
         jButton4.addActionListener(new java.awt.event.ActionListener() {
 
+            /**
+             * Handles the action event triggered by a component.
+             * This method is called when an action occurs, such as a button press.
+             * It sets the visibility of the component to false, effectively hiding it.
+             *
+             * @param e the ActionEvent object that contains information about the event
+             * @throws IllegalStateException if the component is already not visible
+             */
             public void actionPerformed(java.awt.event.ActionEvent e) {
                 
                 setVisible(false);
@@ -122,16 +130,36 @@ public class Show_Booked extends JInternalFrame {
         private String[] columnNames = {"Pass_No", "Passenger_Nane", "Seat Number", "Bus_RegNo", "Date_of_Travel"};
         private Object[][] data = new Object[50][50];
 
+        /**
+         * Returns the number of columns in the dataset.
+         *
+         * @return the number of columns as an integer.
+         * @throws NullPointerException if the columnNames array is null.
+         */
         public int getColumnCount() {
             
             return columnNames.length;
         }
 
+        /**
+         * Returns the number of rows in the data.
+         *
+         * @return the number of rows as an integer.
+         * @throws NullPointerException if the data array is null.
+         */
         public int getRowCount() {
             
             return data.length;
         }
 
+        /**
+         * Retrieves the name of the specified column.
+         *
+         * @param col the index of the column whose name is to be retrieved
+         * @return the name of the column at the specified index
+         * @throws ArrayIndexOutOfBoundsException if the specified column index is out of range
+         *         (i.e., < 0 or >= the number of columns)
+         */
         public String getColumnName(int col) {
             
             return columnNames[col];
