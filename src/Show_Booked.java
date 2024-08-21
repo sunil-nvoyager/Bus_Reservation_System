@@ -31,6 +31,7 @@ public class Show_Booked extends JInternalFrame {
 
         javax.swing.table.TableColumn column = null;
         for (int i = 0; i < 5; i++) {
+            
             column = jTable.getColumnModel().getColumn(i);
         }
         jScrollPane = new JScrollPane(jTable);
@@ -80,6 +81,7 @@ public class Show_Booked extends JInternalFrame {
         jButton4.addActionListener(new java.awt.event.ActionListener() {
 
             public void actionPerformed(java.awt.event.ActionEvent e) {
+                
                 setVisible(false);
 
             }
@@ -121,14 +123,17 @@ public class Show_Booked extends JInternalFrame {
         private Object[][] data = new Object[50][50];
 
         public int getColumnCount() {
+            
             return columnNames.length;
         }
 
         public int getRowCount() {
+            
             return data.length;
         }
 
         public String getColumnName(int col) {
+            
             return columnNames[col];
         }
 
